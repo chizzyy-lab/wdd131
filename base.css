@@ -1,0 +1,166 @@
+:root {
+    --primary-color: #055a05; /* forest green */
+    --secondary-color: #f4a261; /* warm sand */
+    --accent1-color: #264653; /* dark slate blue */
+    --accent2-color: #e9c46a; /*light golden yellow*/
+    --heading-font: "Merriweather Sans", sans-serif;
+    --body-font: "Lato", sans-serif;
+}
+
+header {
+    display: block;
+    background-color: gray;
+    color: #fff;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul li {
+    padding: 15px 120px;
+    list-style: none;
+    font-size: larger;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+header nav ul li a:hover{
+    color: var(--secondary-color);
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#course-title {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--heading-font);
+    background-color: var(--accent1-color);
+    padding: 5px 0;
+    font-weight: 600;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent2-color);
+}
+
+section {
+    border: 1.5px solid grey;
+    border-radius: 20px;
+    margin: 0 20px;
+}
+
+section h2 {
+    background-color: var(--accent1-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+section p {
+    margin-left: 20px;
+    margin-top: 60px;
+    font-family: var(--body-font);
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+
+section .image {
+    width: 16.5%;
+    float: right;
+    margin-top: -7rem;
+    margin-right: 20px;
+}
+
+.about-country {
+    margin-top: 100px;
+}
+
+.about-country p {
+    float: right;
+    margin-top: -1.5rem;
+}
+
+.image2 {
+    padding: 10px;
+}
+
+.about-country .image2 {
+    width: 16%;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+h3 {
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: xx-large;
+    text-decoration: underline;
+    text-decoration-thickness: -10px;
+}
+
+.card1 {
+    width: 790px;
+    height: 720px;
+}
+
+.card2 {
+    width: 500px;
+    height: 720px;
+    float: right;
+    margin-top: -45rem;
+}
+
+.card2 nav ul {
+    padding-top: 100px;
+}
+
+.card2 nav ul li {
+    padding-top: 20px;
+}
+
+.card2 nav ul li a:hover {
+    color: var(--accent1-color);
+}
+
+footer {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#lastModified {
+    color: var(--accent2-color);
+    word-spacing: 5px;
+}
