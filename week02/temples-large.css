@@ -1,20 +1,14 @@
-.nav {
-    flex-direction: row;
-    justify-content: center;
+.navigation {
+  display: flex !important;
+  flex-direction: row;
 }
 
-.nav li {
-    border-top: none;
-}
-
-.nav a {
-    border-right: 1px solid #555;
-}
-
-.nav li:last-child a {
-    border-right: none;
+#menu {
+  display: none;
 }
 
 .captions {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 1200px;
+  margin: auto;
 }
