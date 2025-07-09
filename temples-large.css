@@ -1,0 +1,14 @@
+.navigation {
+  display: flex !important;
+  flex-direction: row;
+}
+
+#menu {
+  display: none;
+}
+
+.captions {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 1200px;
+  margin: auto;
+}
