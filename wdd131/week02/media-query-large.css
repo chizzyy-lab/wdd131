@@ -1,0 +1,16 @@
+@media screen and (min-width: 500px) {
+  header {
+    background-color: black;
+    color: white;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  main > * {
+    flex: 1; /* Makes each child take equal space */
+  }
+}
