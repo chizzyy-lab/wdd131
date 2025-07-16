@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #055a05; /* forest green */
+    --secondary-color: #f4a261; /* warm sand */
+    --accent1-color: red; /* dark slate blue */
+    --accent2-color: #e9c46a; /*light golden yellow*/
+    --heading-font: "Merriweather Sans", sans-serif;
+    --body-font: "Lato", sans-serif;
+}
+
+header {
+    background-color: var(--accent1-color);
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 20px 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.space {
+    border: 3px solid var(--primary-color);
+}
+
+.hero {
+    position: relative;
+}
+
+section {
+    border: 1px solid black;
+    width: 20%;
+}
+
+section h2 {
+    padding-left: 8px;
+    color: #fff;
+    background-color: var(--primary-color);
+    width: 200px;
+}
+
+section p {
+    padding: 5px 20px;
+}
+
+section .a1 {
+    position: absolute;
+    margin-top: -32rem;
+    margin-left: 3rem;
+    border: 1px solid black;
+    background-color: #fff;
+}
+
+section .a1 h2 {
+    margin-top: 5px;
+}
+
+section .a2 {
+    position: absolute;
+    margin-top: -12rem;
+    margin-left: 65rem;
+    border: 1px solid black;
+    background-color: #fff;
+}
+
+footer {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
