@@ -46,7 +46,6 @@ section h2 {
     padding-left: 8px;
     color: #fff;
     background-color: var(--primary-color);
-    width: 200px;
 }
 
 section p {
@@ -55,10 +54,10 @@ section p {
 
 section .a1 {
     position: absolute;
-    margin-top: -32rem;
-    margin-left: 3rem;
     border: 1px solid black;
     background-color: #fff;
+    width: 160px;
+    height: 23.7rem;
 }
 
 section .a1 h2 {
@@ -66,9 +65,9 @@ section .a1 h2 {
 }
 
 section .a2 {
+    width: 160px;
+    height: 23.7rem;
     position: absolute;
-    margin-top: -12rem;
-    margin-left: 65rem;
     border: 1px solid black;
     background-color: #fff;
 }
@@ -86,3 +85,4 @@ footer p {
     align-items: center;
     justify-content: center;
 }
+
