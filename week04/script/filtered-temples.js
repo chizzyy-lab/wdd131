@@ -70,6 +70,27 @@ const temples = [
     area: 11000,
     imageUrl:
     "images/H9.jpeg"
+  },
+  {
+  templeName: "Cape Town South Africa",
+  location: "Cape Town, South Africa",
+  dedicated: "2022, November, 12",
+  area: 10500,
+  imageUrl: "images/H10.jpeg"
+  },
+  {
+    templeName: "Tokyo Japan",
+    location: "Tokyo, Japan",
+    dedicated: "1980, October, 18",
+    area: 9480,
+    imageUrl: "images/H11.jpeg"
+  },
+  {
+    templeName: "Córdoba Argentina",
+    location: "Córdoba, Argentina",
+    dedicated: "2015, May, 17",
+    area: 34380,
+    imageUrl: "images/H12.jpeg"
   }
 
 ];
@@ -110,9 +131,33 @@ function createTempleCard(filteredTemple) {
     })
 }
 
+document.getElementById("old").addEventListener("click", () => {
+  const filtered = temples.filter(t => new Date(t.dedicated).getFullYear() < 1900);
+  displayTemples(filtered);
+});
+
+document.getElementById("new").addEventListener("click", () => {
+  const filtered = temples.filter(t => new Date(t.dedicated).getFullYear() > 2000);
+  displayTemples(filtered);
+});
+
+document.getElementById("large").addEventListener("click", () => {
+  const filtered = temples.filter(t => t.area > 90000);
+  displayTemples(filtered);
+});
+
+document.getElementById("small").addEventListener("click", () => {
+  const filtered = temples.filter(t => t.area < 10000);
+  displayTemples(filtered);
+});
+
+document.getElementById("home").addEventListener("click", () => {
+  displayTemples(temples);
+});
 
 
-// getdates.js
+
+ // getdates.js
 
 // Get the current year
 const currentYear = new Date().getFullYear();
@@ -121,6 +166,6 @@ const currentYear = new Date().getFullYear();
 document.querySelector("footer p:nth-of-type(1)").textContent = `© ${currentYear}`;
 
 // Insert the last modified date into the second paragraph of the footer
-document.querySelector("footer p:nth-of-type(2)").textContent = `Last modified: ${document.lastModified}`; 
+document.querySelector("footer p:nth-of-type(2)").textContent = `Last modified: ${document.lastModified}`;
 
 
