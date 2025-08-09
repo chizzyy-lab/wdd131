@@ -1,0 +1,147 @@
+:root {
+    --primary-color: #1b4965; 
+    --secondary-color: #ca6702; 
+    --accent1-color: red; 
+    --accent2-color: #fdf6ec; 
+    --heading-font: "Merriweather Sans", sans-serif;
+    --body-font: "Roboto", sans-serif;
+} 
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+header img {
+    width:5%;
+    margin-top: .5rem;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 50px;
+    margin-left: 1.5rem;
+}
+
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+.btn {
+    margin-left: 20rem;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #fff;
+    background-color: var(--secondary-color);
+}
+
+section {
+    font-family: var(--body-font);
+    background-color: var(--accent2-color);
+}
+
+h1 {
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--heading-font);
+}
+
+section img {
+    width: 100%;
+    height: 70%;
+    position: absolute;
+}
+
+.SN h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: var(--secondary-color);
+    font-size: large;
+}
+
+.SN p {
+    position: relative;
+    color: var(--secondary-color);
+    font-size: large;
+    width: 50%;
+}
+
+.SN p strong {
+    color: var(--primary-color);
+    font-size: larger;
+    font-family: var(--heading-font);
+}
+
+.SP, .S, .CS, .TG, .WF {
+    width: 70%;
+    position: relative;
+    border: 1px solid red;
+}
+
+.h2{
+    font-family: var(--heading-font);
+    position: absolute;
+    margin-top: 9rem;
+    margin-left: 35.5rem;
+    color: var(--primary-color);
+}
+
+.more-info {
+    padding-left: 3rem;
+    margin-top: 15rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background-color: var(--accent2-color);
+}
+
+.more-info h2 {
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+}
+
+.more-info p, ul {
+    color: var(--secondary-color);
+    font-family: var(--body-font);
+}
+
+.more-info p, ul li strong {
+    color: var(--accent1-color);
+}
+
+footer {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
